@@ -16,13 +16,13 @@ class LoginPage extends StatelessWidget {
           if (controller.googleAccount.value == null)
             return buildLoginButton();
           else
-            return buildProfileView();
+            return buildProfileView(context);
         }),
       ),
     );
   }
 
-  Column buildProfileView() {
+  Column buildProfileView(context) {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -47,10 +47,11 @@ class LoginPage extends StatelessWidget {
           avatar: Icon(Icons.map),
           label: Text('Google Map'),
           onPressed: () {
-            // Navigator.push(
-            //   context,
-            //   MaterialPageRoute(builder: (context) => MapApi()),
-            // );
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (BuildContext context) => MapScreen02()),
+            );
           },
         ),
         ActionChip(

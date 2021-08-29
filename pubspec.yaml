@@ -30,6 +30,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_sign_in: ^5.0.7
   get: ^4.3.8
+  geolocator: ^7.5.0
+  google_maps_flutter: ^2.0.6
 
 dev_dependencies:
   flutter_test:
@@ -37,6 +39,8 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
+
+# kon page e map show koraba nav there...signin korle akta btn asbe 
 
 # The following section is specific to Flutter.
 flutter:
